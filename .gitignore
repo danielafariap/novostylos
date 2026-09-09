@@ -1,0 +1,12 @@
+# AIOX cockpit-integration (conductor file-protocol + state) — managed
+.sdc-decision/
+.sdc-resolution/
+.sdc-inbox/
+.sdc-ack/
+.sdc-status/
+.aiox/
+
+# Ferramental AIOX local — NÃO é o site, e contém material interno da organização
+# (emails, URLs e métricas internas). Fora do repositório pessoal por decisão explícita.
+.aiox-core/
+.claude/
