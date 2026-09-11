@@ -1,0 +1,16 @@
+# Configuração do GitHub Pages para o site do Novo Stylos.
+#
+# O site é estático puro (HTML + CSS + JS, sem build). O Jekyll só precisa
+# copiar os arquivos como estão — não há layout, post nem template a processar.
+#
+# `exclude` mantém a matéria-prima fora do que vai para a internet: os prints e
+# vídeos de WhatsApp, os mockups de proposta, as avaliações e o texto-fonte que
+# originaram o site. Eles seguem versionados no repositório, mas nenhum deles
+# vira endereço público.
+#
+# ATENÇÃO: não adicione um arquivo `.nojekyll` a este repositório. Ele desliga o
+# Jekyll e, com ele, esta exclusão — a pasta _material/ passaria a ser publicada.
+exclude:
+  - _material
+  - aiox.config.json
+  - README.md
