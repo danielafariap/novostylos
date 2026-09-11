@@ -78,18 +78,20 @@ npx serve .
 
 ## Estado atual
 
-Repositório `danielafariap/novostylos`, privado. GitHub Pages **não** está ativo: o site ainda não
-está no ar.
+**No ar em https://danielafariap.github.io/novostylos/** desde 11/09/2026.
 
-O repositório já está **preparado** para publicar: o material bruto saiu da raiz para `_material/`
-e `_config.yml` garante que ele não seja servido. Falta a decisão de hospedagem e, no caso do
-GitHub Pages, ligar o Pages — o que exige permissão de **admin**, hoje só da dona do repositório.
+Repositório `danielafariap/novostylos`, **público**. GitHub Pages ativo, servindo da branch `main`
+a partir da raiz, com HTTPS forçado. As 4 páginas e os 12 arquivos de `assets/` respondem 200;
+`_material/` não é servido (404), conforme `_config.yml`.
 
 ## Pendências conhecidas
 
-- [ ] **Nota e total de avaliações do Google.** O `5,0★` e o `+2mil clientes atendidas` exibidos no
-      topo vieram da versão anterior do site e **nunca foram confirmados**. Verificar antes de
-      publicar, ou remover — são afirmações públicas sobre um negócio real.
+- [ ] **Material da cliente no histórico do git.** `_material/` saiu do site publicado, mas os 21
+      arquivos foram commitados em `4655ee4`/`c113b90`, hoje commits **públicos** — continuam
+      alcançáveis por quem consultar o histórico. Tirá-los de verdade exige reescrever o histórico
+      e forçar o push (e ainda assim o GitHub mantém objetos em cache por um período). Decisão em
+      aberto, a tomar com a Luciana: se o material for sensível, o caminho limpo é o repositório
+      público conter só o site, com a matéria-prima vivendo fora do git.
 - [ ] **Horário de funcionamento.** Não consta no briefing e não foi inventado. Falta pedir e
       incluir em `contato.html`.
 - [ ] **Fotos em alta resolução.** Todas as fotos vieram por WhatsApp, que comprime para no máximo
@@ -102,9 +104,10 @@ GitHub Pages, ligar o Pages — o que exige permissão de **admin**, hoje só da
       post; falta apenas preencher as URLs.
 - [ ] **`og:image` relativo.** As tags de compartilhamento apontam para caminhos relativos. Quando
       houver domínio definitivo, trocar por URLs absolutas para o card aparecer no WhatsApp.
-- [ ] **Hospedagem × visibilidade — a decisão em aberto.** GitHub Pages em conta gratuita exige
-      repositório **público**; em conta paga (Pro/Team) publica de repositório privado, mas o site
-      resultante é público de qualquer forma. O repositório precisa permanecer **privado** enquanto
-      contiver o material bruto da cliente. As saídas: (a) a dona ter plano pago e ligar o Pages
-      com o repo privado; (b) tirar `_material/` do repositório e do histórico, e então torná-lo
-      público; ou (c) hospedar em Netlify/Vercel, que servem repositório privado no plano gratuito.
+
+## Resolvido
+
+- [x] **Nota e total de avaliações do Google.** O `5,0★` e o `+2mil clientes atendidas` de
+      `index.html` vinham da versão anterior do site e estavam marcados como não confirmados.
+      **Confirmados por Marcus Prado em 11/09/2026** — os números estão corretos e permanecem.
+- [x] **Hospedagem.** Resolvida com GitHub Pages sobre o repositório público (11/09/2026).
