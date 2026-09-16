@@ -10,3 +10,6 @@
 # (emails, URLs e métricas internas). Fora do repositório pessoal por decisão explícita.
 .aiox-core/
 .claude/
+
+# Pasta gerada para subir na hospedagem — duplica arquivos ja versionados
+publicar/
