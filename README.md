@@ -102,8 +102,6 @@ a partir da raiz, com HTTPS forçado. As 4 páginas e os 12 arquivos de `assets/
       no material atual; por isso os 8 cards de `servicos.html` usam só ícone.
 - [ ] **Links dos posts do Instagram.** A lista de antes/depois já suporta ligar cada foto ao seu
       post; falta apenas preencher as URLs.
-- [ ] **`og:image` relativo.** As tags de compartilhamento apontam para caminhos relativos. Quando
-      houver domínio definitivo, trocar por URLs absolutas para o card aparecer no WhatsApp.
 
 ## Resolvido
 
@@ -111,3 +109,9 @@ a partir da raiz, com HTTPS forçado. As 4 páginas e os 12 arquivos de `assets/
       `index.html` vinham da versão anterior do site e estavam marcados como não confirmados.
       **Confirmados por Marcus Prado em 11/09/2026** — os números estão corretos e permanecem.
 - [x] **Hospedagem.** Resolvida com GitHub Pages sobre o repositório público (11/09/2026).
+- [x] **Domínio próprio.** O site passou a atender em `https://salaonovostylos.com.br` (18/09/2026).
+      Zona no Registro.br com os quatro `A` e os quatro `AAAA` do GitHub Pages no apex e `www` como
+      `CNAME`; o arquivo `CNAME` na raiz é o que faz o Pages reivindicar o domínio. O endereço
+      antigo `danielafariap.github.io/novostylos/` redireciona com 301.
+- [x] **`og:image` relativo.** Resolvido junto com o domínio (18/09/2026): as quatro páginas agora
+      trazem `og:image`, `og:url` e `canonical` absolutos em `salaonovostylos.com.br`.
